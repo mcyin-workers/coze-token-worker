@@ -1,0 +1,17 @@
+{
+    //Worker名称，需要修改成你自己的Worker名称
+    "name": "coze-token-worker",
+    "compatibility_date": "2025-11-17",
+    "main": "worker.js",
+    "vars": {
+        //必填项（3个，不可缺失）
+        "CLIENT_ID": "你的OAuth应用ID（字符串类型，替换为实际值）",
+        "PRIVATE_KEY": "你的PEM格式私钥（完整复制，包含-----BEGIN PRIVATE KEY-----和-----END PRIVATE KEY-----及中间所有内容），替换为实际值，可加密存储",
+        "KID": "你的公钥指纹（字符串类型，替换为实际值）",
+        //可选项（3个，可使用默认值，也可替换为其他coze定义值）
+        "AUDIENCE": "api.coze.cn",
+        "TOKEN_ENDPOINT": "https://api.coze.cn/api/permission/oauth2/token",
+        //申请的 AccessToken 有效期，单位为秒，默认 900 秒，即 15 分钟。最大可设置为 86399 秒，即 24 小时。
+        "TOKEN_DURATION": 900
+    }
+}
