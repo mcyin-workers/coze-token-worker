@@ -1,6 +1,6 @@
 {
     //Worker名称，需要修改成你自己的Worker名称
-    "name": "coze-token-worker",
+    "name": "coze-token-worker1",
     "compatibility_date": "2025-11-17",
     "main": "worker.js",
     "vars": {
